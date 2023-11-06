@@ -16,7 +16,7 @@ fun main(){
 
 //    Immutable or read-only variables in kotlin
     val age = 30
-    println(age)
+    println(age);
 
 //    How to Provide a Type on Kotlin Variables
     val lastName = "NASIR"
