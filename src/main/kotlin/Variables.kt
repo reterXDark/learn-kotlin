@@ -19,6 +19,8 @@ fun main(){
     println(age);
 
 //    How to Provide a Type on Kotlin Variables
-    val lastName = "NASIR"
+    val lastName :String= "NASIR"
     println(lastName::class);
+//    Kotlin Data Types: Numbers
+
 }
