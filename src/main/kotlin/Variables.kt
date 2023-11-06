@@ -20,5 +20,5 @@ fun main(){
 
 //    How to Provide a Type on Kotlin Variables
     val lastName = "NASIR"
-    println(lastName::class)
+    println(lastName::class);
 }
