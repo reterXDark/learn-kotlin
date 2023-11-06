@@ -1,6 +1,6 @@
 import kotlin.time.Duration.Companion.milliseconds
 
-fun main(){
+fun main() {
 //    variables in kotlin
     var fullName = "Learn Kotlin"
     println(fullName)
@@ -19,8 +19,19 @@ fun main(){
     println(age);
 
 //    How to Provide a Type on Kotlin Variables
-    val lastName :String= "NASIR"
+    val lastName: String = "NASIR"
     println(lastName::class);
 //    Kotlin Data Types: Numbers
-
+    val myByte: Byte = 8 //8-bit signed Integer
+    val myShort: Short = 16 //16-bit signed Integer
+    val myInt: Int = 32 //32-bit signed Integer
+    val myLong: Long = 64 //64-bit signed integer
+    /*for decimal value*/
+    val myFloat: Float = 2.43F // 32 bit floating point number
+    val myDouble: Double = 2323.232 //64 bit floating point number
+    /*Every Thing in kotlin is an object like types of each variable are object which can extend each other*/
+    println(myByte.toDouble())
+    /*Using methods to do some simple calculations*/
+    println("ADDED BY BUILT IN FUNCTION :" + myByte.plus(myShort))
+    println("" + myByte.times(8))
 }
