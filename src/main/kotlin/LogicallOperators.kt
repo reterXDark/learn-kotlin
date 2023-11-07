@@ -9,7 +9,6 @@ fun main() {
     if ((myName !== yourName) && (myAge !== yourAge)) {
         println("We're not peers")
     }
-
     /*OR*/
     if ((myName !== yourName) || (myAge !== yourAge)) {
         println("We're not peers")
