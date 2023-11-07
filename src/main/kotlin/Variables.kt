@@ -1,3 +1,4 @@
+import java.util.*
 import kotlin.time.Duration.Companion.milliseconds
 
 fun main() {
@@ -34,4 +35,39 @@ fun main() {
     /*Using methods to do some simple calculations*/
     println("ADDED BY BUILT IN FUNCTION :" + myByte.plus(myShort))
     println("" + myByte.times(8))
+//    Kotlin Data Types: String and Char
+    val outfitter: String = "Outfitters" // String with double quotes
+    println(outfitter.length)
+    println(outfitter.replaceFirstChar { it.lowercase(Locale.getDefault()) })
+    val outfitter2: Char = '\\' // String with single quotes & CHar represent 16 bit unicode character
+    println(outfitter2)
+
+
+//    Kotlin String Interpolation and Triple Quotes
+    /*for multiple line message we can do like this*/
+    var message: String =
+        "Salam, \n My name is Umar \n im cs graduate \n im working as software engineer at \n \t Trailfive technology"
+//    println(message)
+
+    /*it's some seems ugly so in kotlin we can write string in multiple line*/
+    val messageTwo: String = """
+        Salam, 
+            My name is Umar im cs graduate &
+            im working as software engineer at Trail-five technology
+    """.trimIndent()
+    println(messageTwo)
+
+    val name: String = "Umar"
+    val agee: Int = 20
+
+    println("Hello My Name is $name & my age is $age lastly your name is ${name.length} characters long")
+
+//    Kotlin Data Types: Boolean
+    var isBlank: Boolean = true
+    println(isBlank.not())
+    isBlank = "".isBlank()
+    isBlank = "".isNotBlank()
+
+    println(isBlank)
+
 }
